@@ -56,12 +56,12 @@ namespace Fiorello.Areas.Admin.Controllers
 
             if (!slider.Photo.CheckFileType("image/"))
             {
-                ModelState.AddModelError("Photo", "Type of file must be image");
+                ModelState.AddModelError("Photo", "Type of file must be image.");
                 return View();
             }
 
             string fileName = Guid.NewGuid().ToString() + "_" + slider.Photo.FileName;
-            string path = Path.Combine(_env.WebRootPath, "img", fileName);
+            string path = FileHelper.GetFilePath(_env.WebRootPath, "img", fileName);
 
             using(FileStream stream = new FileStream(path, FileMode.Create))
             {
@@ -100,10 +100,10 @@ namespace Fiorello.Areas.Admin.Controllers
             }
 
             string fileName = Guid.NewGuid().ToString() + "_" + slider.Photo.FileName;
-            string path = Path.Combine(_env.WebRootPath, "img", fileName);
+            string path = FileHelper.GetFilePath(_env.WebRootPath, "img", fileName);
 
             Slider oldImage = await _context.Sliders.AsNoTracking().FirstOrDefaultAsync(s => s.Id == slider.Id);
-            string oldImagePath = Path.Combine(_env.WebRootPath, "img", oldImage.Image);
+            string oldImagePath = FileHelper.GetFilePath(_env.WebRootPath, "img", oldImage.Image);
 
             FileHelper.DeleteFileFromPath(oldImagePath);
 
@@ -129,7 +129,7 @@ namespace Fiorello.Areas.Admin.Controllers
             Slider slider = await _sliderService.GetById(id);
             if (slider is null) return NotFound();
 
-            string path = Path.Combine(_env.WebRootPath, "img", slider.Image);
+            string path = FileHelper.GetFilePath(_env.WebRootPath, "img", slider.Image);
 
             FileHelper.DeleteFileFromPath(path);
 

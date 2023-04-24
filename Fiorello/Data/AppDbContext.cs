@@ -35,6 +35,7 @@ namespace Fiorello.Data
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Blog>().HasQueryFilter(b => !b.SoftDelete);
+            modelBuilder.Entity<BlogPost>().HasQueryFilter(bp => !bp.SoftDelete);
             modelBuilder.Entity<Slider>().HasQueryFilter(s => !s.SoftDelete);
             modelBuilder.Entity<SliderInfo>().HasQueryFilter(si => !si.SoftDelete);
             modelBuilder.Entity<Expert>().HasQueryFilter(e => !e.SoftDelete);

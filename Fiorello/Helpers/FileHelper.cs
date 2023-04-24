@@ -12,5 +12,10 @@ namespace Fiorello.Helpers
 		{
 			if (File.Exists(path)) File.Delete(path);
 		}
+
+		public static string GetFilePath(string env, string folder, string fileName)
+		{
+			return Path.Combine(env, folder, fileName);
+		}
 	}
 }

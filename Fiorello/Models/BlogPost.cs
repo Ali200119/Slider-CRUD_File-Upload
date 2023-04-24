@@ -21,6 +21,6 @@ namespace Fiorello.Models
 		public string Description { get; set; }
 
 		public int BlogId { get; set; } = 1;
-		public Blog Blog { get; set; }
+		public Blog? Blog { get; set; }
 	}
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Fiorello.Data;
 using Fiorello.Models;
 using Fiorello.Services.Interfaces;
@@ -18,5 +19,9 @@ namespace Fiorello.Services
 
 
         public async Task<Blog> GetAll() => await _context.Blogs.Include(b => b.BlogPosts).FirstOrDefaultAsync();
+
+        public async Task<IEnumerable<BlogPost>> GetAllBlogPosts() => await _context.BlogPosts.ToListAsync();
+
+        public async Task<BlogPost> GetBlogPostById(int? id) => await _context.BlogPosts.FirstOrDefaultAsync(bp => bp.Id == id);
     }
 }

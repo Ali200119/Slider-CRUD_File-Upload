@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/ali200119/Desktop/Slider-CRUD_File-Upload/Fiorello
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/ali200119/Desktop/Slider-CRUD_File-Upload/Fiorello/Areas/Admin/Views/BlogPost/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQmxvZ1Bvc3QvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ali200119/Desktop/Slider-CRUD_File-Upload/Fiorello/Areas/Admin/Views/BlogPost/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQmxvZ1Bvc3QvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ali200119/Desktop/Slider-CRUD_File-Upload/Fiorello/Areas/Admin/Views/BlogPost/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQmxvZ1Bvc3QvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ali200119/Desktop/Slider-CRUD_File-Upload/Fiorello/Areas/Admin/Views/BlogPost/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQmxvZ1Bvc3QvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ali200119/Desktop/Slider-CRUD_File-Upload/Fiorello/Areas/Admin/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnkvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
